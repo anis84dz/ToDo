@@ -194,6 +194,7 @@ extension.skeleton.header = {
 									}, component);
 								} else {
 									satus.storage.remove('encrypted');
+									chrome.storage.session.remove('password');
 
 									component.dataset.value = 'false';
 
